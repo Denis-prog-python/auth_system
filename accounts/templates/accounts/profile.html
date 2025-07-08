@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Профиль</title>
+</head>
+<body>
+    <h2>Профиль пользователя</h2>
+    <p>Имя пользователя: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Последний вход: {{ user.last_login }}</p>
+    <p>Дата регистрации: {{ user.date_joined }}</p>
+    <a href="{% url 'logout' %}">Выйти</a>
+</body>
+</html>
